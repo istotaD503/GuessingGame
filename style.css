@@ -3,7 +3,7 @@ html {
     height: 100%;
 }
 body {
-    background-image: url('images/background.jpg');
+    background-image: url('images-fonts/background.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: artifica;
@@ -19,7 +19,7 @@ ul {
 }
 @font-face {
     font-family: artifica;
-    src: url(Artifika-Regular.ttf);
+    src: url(images-fonts/Artifika-Regular.ttf);
 }
 @keyframes move-right {
     from {left: -1000px}
