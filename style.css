@@ -69,10 +69,14 @@ ul {
     1px 1px 0 rgba(99, 214, 109, 0.658);
 }
 #title {
+    padding: 20px;
+    border-radius: 2%;
+    margin: 25px auto;
+    width: 500px;
     position: relative;
     animation: move-right-header 2s;
     animation-timing-function: ease;
-    border-color: rgb(255, 210, 127);
+    border-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
     /* text-shadow: 2px 2px 10px black; */
 }
