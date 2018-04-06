@@ -78,6 +78,8 @@ var newGame = function() {
   return new Game();
 }
 
+var keyPress; 
+
 function getTheInput(instanceOfGame) {
   var guess = $('#player-input').val()
   $('#player-input').val('')
@@ -99,7 +101,7 @@ $(document).ready(function () {
     getTheInput(game);
   })
 
-  $('#player-input').keypress(function(key){
+  keyPress = $('#player-input').keypress(function(key){
     if (key.which == 13) {
       getTheInput(game);
     }
@@ -107,8 +109,7 @@ $(document).ready(function () {
 
   $('#hint').click(function(){
     var hint = game.provideHint();
-    $('#title').text('One of them are winning!')
-    $('#subtitle').text(hint)
+    $('#hint-area').text('One of them is a winning ' + hint)
     $('#hint').prop('disabled',true)
   })
 }); 
